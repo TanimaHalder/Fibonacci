@@ -5,9 +5,7 @@ import "fmt"
 func main() {
 	cache := make(map[int64]int64)
 	for i := int64(1); i < 100; i++ {
-		if i == 93 {
-			fmt.Printf("%d + %d = %d ??? weird, what happened?)\n", cache[92], cache[91], cache[92]+cache[91])
-		}
+
 		fmt.Println(fib(i, cache))
 	}
 }
