@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	cache := make(map[int64]int64)
-	for i := int64(1); i < 100; i++ {
+	for i := int64(1); i < 50; i++ {
 
 		fmt.Println(fib(i, cache))
 	}
